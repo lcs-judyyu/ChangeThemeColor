@@ -14,6 +14,7 @@ struct ThirdView: View {
         ZStack {
             appTheme.primary
                 .edgesIgnoringSafeArea(.all)
+            
             VStack(spacing: 20) {
                 
                 Image(systemName: "globe")
@@ -21,6 +22,7 @@ struct ThirdView: View {
                     .foregroundColor(appTheme.secondary)
                 
                 Text("This is the third view")
+                    .bold()
                     .foregroundColor(appTheme.secondary)
                 
                 Button(action: {
@@ -28,24 +30,30 @@ struct ThirdView: View {
                 }, label: {
                     
                     Text("Press me")
+                        .bold()
                 })
                 .buttonStyle(.bordered)
                 .tint(appTheme.tertiary)
             }
             .padding()
+            .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(.white)
+                )
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     Button(action: {
                         
                     }, label: {
                         
-                        Image(systemName: "gearshape")
+                        Image(systemName: "gearshape.fill")
                     })
                 }
             }
         .tint(appTheme.tertiary)
             
         }
+        
     }
 }
 

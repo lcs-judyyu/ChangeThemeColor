@@ -10,32 +10,47 @@ import SwiftUI
 struct SecondView: View {
     @Environment(\.appTheme) var appTheme
     var body: some View {
-        VStack(spacing: 20) {
+        ZStack {
+            appTheme.primary
+                .edgesIgnoringSafeArea(.all)
             
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            
-            Text("This is the second view")
-            
-            Button(action: {
+            VStack(spacing: 20) {
                 
-            }, label: {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(appTheme.secondary)
                 
-                Text("Press me")
-            })
-            .buttonStyle(.bordered)
-        }
-        .padding()
-        .toolbar {
-            ToolbarItem(placement: .primaryAction) {
+                Text("This is the second view")
+                    .bold()
+                    .foregroundColor(appTheme.secondary)
+                
                 Button(action: {
                     
                 }, label: {
                     
-                    Image(systemName: "gearshape")
+                    Text("Press me")
+                        .bold()
                 })
+                .buttonStyle(.bordered)
+                .tint(appTheme.tertiary)
             }
+            .padding()
+            .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(.white)
+                )
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button(action: {
+                        
+                    }, label: {
+                        
+                        Image(systemName: "gearshape.fill")
+                    })
+                }
+            }
+        .tint(appTheme.tertiary)
+            
         }
     }
 }

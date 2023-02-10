@@ -17,9 +17,9 @@ struct AppTheme {
         case .chicago:
             return AppTheme(primary: .black, secondary: .yellow, tertiary: .orange)
         case .anythingGoes:
-            return AppTheme(primary: .white, secondary: .blue, tertiary: .red)
+            return AppTheme(primary: .blue, secondary: .red, tertiary: .cyan)
         case .somethingRotten:
-            return AppTheme(primary: .brown, secondary: .yellow, tertiary: .red)
+            return AppTheme(primary: .brown, secondary: .pink, tertiary: .red)
         }
     }
 }
