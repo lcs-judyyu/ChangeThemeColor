@@ -10,7 +10,9 @@ import SwiftUI
 struct FirstNavigatedView: View {
     @Environment(\.appTheme) var appTheme
     var body: some View {
-        VStack {
+        
+        VStack(spacing: 10) {
+            
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
                 .foregroundColor(appTheme.primary)
             Text("Hello, World!")
@@ -19,6 +21,7 @@ struct FirstNavigatedView: View {
                 .foregroundColor(appTheme.tertiary)
         }
         .bold()
+        
     }
 }
 

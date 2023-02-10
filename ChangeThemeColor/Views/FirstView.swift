@@ -13,7 +13,6 @@ struct FirstView: View {
         
         ZStack {
             appTheme.primary
-                .edgesIgnoringSafeArea(.all)
             
             VStack(spacing: 20) {
                 

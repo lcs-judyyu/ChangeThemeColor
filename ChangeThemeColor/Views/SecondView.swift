@@ -12,7 +12,6 @@ struct SecondView: View {
     var body: some View {
         ZStack {
             appTheme.primary
-                .edgesIgnoringSafeArea(.all)
             
             VStack(spacing: 20) {
                 
