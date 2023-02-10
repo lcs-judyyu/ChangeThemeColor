@@ -11,7 +11,32 @@ import SwiftUI
 struct ChangeThemeColorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            TabView {
+                
+                NavigationView {
+                    FirstView()
+                }
+                .tabItem {
+                    Image(systemName: "1.square")
+                }
+                
+                NavigationView {
+                    SecondView()
+                }
+                .tabItem {
+                    Image(systemName: "2.square")
+                }
+                
+                NavigationView {
+                    SecondView()
+                }
+                .tabItem {
+                    Image(systemName: "3.square")
+                }
+                
+            }
+            
         }
     }
 }
