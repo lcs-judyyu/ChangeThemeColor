@@ -52,6 +52,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		22A5FD892995F94900BFE28B /* Environment Keys */ = {
+			isa = PBXGroup;
+			children = (
+				22A5FD832995F44800BFE28B /* AppThemeKey.swift */,
+				22A5FD852995F48500BFE28B /* AppTheme.swift */,
+				22A5FD872995F51D00BFE28B /* Constants.swift */,
+			);
+			path = "Environment Keys";
+			sourceTree = "<group>";
+		};
 		22B43E5929947D7300706429 = {
 			isa = PBXGroup;
 			children = (
@@ -72,9 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				22B43E6529947D7300706429 /* ChangeThemeColorApp.swift */,
-				22A5FD832995F44800BFE28B /* AppThemeKey.swift */,
-				22A5FD852995F48500BFE28B /* AppTheme.swift */,
-				22A5FD872995F51D00BFE28B /* Constants.swift */,
+				22A5FD892995F94900BFE28B /* Environment Keys */,
 				22A5FD822995F3D700BFE28B /* Views */,
 				22B43E6929947D7400706429 /* Assets.xcassets */,
 				22B43E6B29947D7400706429 /* Preview Content */,

@@ -16,6 +16,7 @@ struct ChangeThemeColorApp: App {
                 
                 NavigationView {
                     FirstView()
+                        .environment(\.appTheme, AppTheme.theme(for: MusicalTheme.chicago))
                 }
                 .tabItem {
                     Image(systemName: "1.square")
@@ -23,13 +24,15 @@ struct ChangeThemeColorApp: App {
                 
                 NavigationView {
                     SecondView()
+                        .environment(\.appTheme, AppTheme.theme(for: MusicalTheme.anythingGoes))
                 }
                 .tabItem {
                     Image(systemName: "2.square")
                 }
                 
                 NavigationView {
-                    SecondView()
+                    ThirdView()
+                        .environment(\.appTheme, AppTheme.theme(for: MusicalTheme.somethingRotten))
                 }
                 .tabItem {
                     Image(systemName: "3.square")

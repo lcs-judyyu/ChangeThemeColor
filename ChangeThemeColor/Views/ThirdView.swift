@@ -8,33 +8,43 @@
 import SwiftUI
 
 struct ThirdView: View {
+    @Environment(\.appTheme) var appTheme
     var body: some View {
-        VStack(spacing: 20) {
-            
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            
-            Text("This is the third view")
-            
-            Button(action: {
+        
+        ZStack {
+            appTheme.primary
+                .edgesIgnoringSafeArea(.all)
+            VStack(spacing: 20) {
                 
-            }, label: {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(appTheme.secondary)
                 
-                Text("Press me")
-            })
-            .buttonStyle(.bordered)
-        }
-        .padding()
-        .toolbar {
-            ToolbarItem(placement: .primaryAction) {
+                Text("This is the third view")
+                    .foregroundColor(appTheme.secondary)
+                
                 Button(action: {
                     
                 }, label: {
                     
-                    Image(systemName: "gearshape")
+                    Text("Press me")
                 })
+                .buttonStyle(.bordered)
+                .tint(appTheme.tertiary)
             }
+            .padding()
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button(action: {
+                        
+                    }, label: {
+                        
+                        Image(systemName: "gearshape")
+                    })
+                }
+            }
+        .tint(appTheme.tertiary)
+            
         }
     }
 }
