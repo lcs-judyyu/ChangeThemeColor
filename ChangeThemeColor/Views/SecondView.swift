@@ -33,6 +33,13 @@ struct SecondView: View {
                 })
                 .buttonStyle(.bordered)
                 .tint(appTheme.tertiary)
+                
+                NavigationLink(destination: FirstNavigatedView(), label: {
+                    Text("Go to navigated view")
+                        .bold()
+                })
+                .buttonStyle(.bordered)
+                
             }
             .padding()
             .background(

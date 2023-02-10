@@ -34,6 +34,7 @@ struct FirstView: View {
                 })
                 .buttonStyle(.bordered)
                 .tint(appTheme.tertiary)
+                
             }
             .padding()
             .background(

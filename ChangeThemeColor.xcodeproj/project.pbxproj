@@ -12,6 +12,7 @@
 		22A5FD842995F44800BFE28B /* AppThemeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FD832995F44800BFE28B /* AppThemeKey.swift */; };
 		22A5FD862995F48500BFE28B /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FD852995F48500BFE28B /* AppTheme.swift */; };
 		22A5FD882995F51D00BFE28B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FD872995F51D00BFE28B /* Constants.swift */; };
+		22A5FD8B299614F500BFE28B /* FirstNavigatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FD8A299614F500BFE28B /* FirstNavigatedView.swift */; };
 		22B43E6629947D7300706429 /* ChangeThemeColorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B43E6529947D7300706429 /* ChangeThemeColorApp.swift */; };
 		22B43E6829947D7300706429 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B43E6729947D7300706429 /* FirstView.swift */; };
 		22B43E6A29947D7400706429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B43E6929947D7400706429 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		22A5FD832995F44800BFE28B /* AppThemeKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemeKey.swift; sourceTree = "<group>"; };
 		22A5FD852995F48500BFE28B /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		22A5FD872995F51D00BFE28B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		22A5FD8A299614F500BFE28B /* FirstNavigatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNavigatedView.swift; sourceTree = "<group>"; };
 		22B43E6229947D7300706429 /* ChangeThemeColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChangeThemeColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B43E6529947D7300706429 /* ChangeThemeColorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeThemeColorApp.swift; sourceTree = "<group>"; };
 		22B43E6729947D7300706429 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 				22B43E6729947D7300706429 /* FirstView.swift */,
 				22A5FD7E2995EF6C00BFE28B /* SecondView.swift */,
 				22A5FD802995EF7C00BFE28B /* ThirdView.swift */,
+				22A5FD8A299614F500BFE28B /* FirstNavigatedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22A5FD812995EF7C00BFE28B /* ThirdView.swift in Sources */,
+				22A5FD8B299614F500BFE28B /* FirstNavigatedView.swift in Sources */,
 				22A5FD842995F44800BFE28B /* AppThemeKey.swift in Sources */,
 				22A5FD7F2995EF6C00BFE28B /* SecondView.swift in Sources */,
 				22A5FD862995F48500BFE28B /* AppTheme.swift in Sources */,
