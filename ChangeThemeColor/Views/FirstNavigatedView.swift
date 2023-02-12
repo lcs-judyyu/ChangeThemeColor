@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct FirstNavigatedView: View {
+    
     @Environment(\.appTheme) var appTheme
+    
     var body: some View {
         
         VStack(spacing: 10) {

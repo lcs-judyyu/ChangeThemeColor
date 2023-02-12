@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ThirdView: View {
+    
     @Environment(\.appTheme) var appTheme
+    
     var body: some View {
         
         ZStack {

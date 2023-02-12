@@ -19,7 +19,7 @@ struct AppTheme {
         case .anythingGoes:
             return AppTheme(primary: .blue, secondary: .red, tertiary: .cyan)
         case .somethingRotten:
-            return AppTheme(primary: .brown, secondary: .pink, tertiary: .red)
+            return AppTheme(primary: .brown, secondary: .pink, tertiary: .yellow)
         }
     }
 }
